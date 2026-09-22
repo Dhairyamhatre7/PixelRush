@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PIXEL RUSH</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- GAME HEADER -->
+    <header class="game-header">
+
+        <div class="logo">
+            <span>PIXEL</span> RUSH
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span>❤️</span>
+                <span id="health">3</span>
+            </div>
+
+            <div class="stat">
+                <span>🪙</span>
+                <span id="coins">0</span>
+            </div>
+
+            <div class="stat">
+                <span>⭐</span>
+                <span id="score">0</span>
+            </div>
+
+            <div class="stat">
+                <span>LEVEL</span>
+                <span id="level">1</span>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- GAME AREA -->
+    <main class="game-wrapper">
+
+        <canvas id="gameCanvas" width="1200" height="650"></canvas>
+
+        <!-- START SCREEN -->
+        <div id="startScreen" class="screen">
+
+            <div class="pixel-box">
+
+                <div class="small-title">
+                    WELCOME TO
+                </div>
+
+                <h1>PIXEL RUSH</h1>
+
+                <p>
+                    A RETRO PIXEL ADVENTURE
+                </p>
+
+                <button id="startButton">
+                    ▶ START GAME
+                </button>
+
+                <div class="controls">
+                    <p>← → / A D &nbsp; MOVE</p>
+                    <p>SPACE / W / ↑ &nbsp; JUMP</p>
+                    <p>COLLECT COINS • AVOID ENEMIES</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- GAME OVER -->
+        <div id="gameOverScreen" class="screen hidden">
+
+            <div class="pixel-box">
+
+                <h1>GAME OVER</h1>
+
+                <p>
+                    SCORE:
+                    <span id="finalScore">0</span>
+                </p>
+
+                <p>
+                    COINS:
+                    <span id="finalCoins">0</span>
+                </p>
+
+                <button id="restartButton">
+                    ↻ PLAY AGAIN
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- LEVEL COMPLETE -->
+        <div id="levelCompleteScreen" class="screen hidden">
+
+            <div class="pixel-box">
+
+                <div class="small-title">
+                    LEVEL COMPLETE
+                </div>
+
+                <h1>YOU WIN!</h1>
+
+                <p>
+                    SCORE:
+                    <span id="levelScore">0</span>
+                </p>
+
+                <button id="nextLevelButton">
+                    ▶ NEXT LEVEL
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 PIXEL RUSH</p>
+        <p>RETRO • RUN • COLLECT • SURVIVE</p>
+    </footer>
+
+
+    <script src="js/game.js"></script>
+
+</body>
+</html>
